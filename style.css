@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f2f7fd; /* Cor de fundo principal */
+    background-color: #e0f2e9; /* Cor de fundo principal (verde mais escuro) */
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #27ae60; /* Cor de fundo do cabeçalho (verde) */
+    background-color: #388e3c; /* Cor de fundo do cabeçalho (verde mais escuro) */
     color: #fff;
     padding: 10px 0;
 }
@@ -54,12 +54,12 @@ section {
     text-align: center;
 }
 
-.section-green {
-    background-color: #27ae60; /* Cor de fundo verde para seções alternadas */
+.section-dark {
+    background-color: #388e3c; /* Cor de fundo verde mais escuro para seções alternadas */
     color: #fff;
 }
 
-.section-white {
+.section-light {
     background-color: #fff; /* Cor de fundo branca para seções alternadas */
     color: #333;
 }
@@ -67,6 +67,24 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+}
+
+section .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .content .text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+section .content .image {
+    flex: 1;
+    text-align: right;
 }
 
 section p {
@@ -80,4 +98,3 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
